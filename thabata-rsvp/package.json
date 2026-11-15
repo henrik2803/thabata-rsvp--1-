@@ -1,0 +1,1 @@
+{"name":"thabata-rsvp","version":"1.0.0","private":true,"type":"module","engines":{"node":">=24.0.0"},"scripts":{"start":"node --env-file-if-exists=.env backend/server.js","test":"node --test backend/test.js"}}
