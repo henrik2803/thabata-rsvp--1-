@@ -1,0 +1,17 @@
+# Segredos, confirmações e dependências nunca devem ir para o repositório.
+**/.env
+**/.env.*
+!**/.env.example
+**/node_modules/
+**/data/
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+**/*.db-*
+**/*.dump
+**/*.sql
+**/backups/
+**/coverage/
+**/test-results/
+**/playwright-report/
+npm-debug.log*

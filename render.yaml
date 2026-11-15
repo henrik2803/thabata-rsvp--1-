@@ -1,0 +1,22 @@
+# Apenas o Web Service gratuito. O PostgreSQL é criado separadamente no Neon.
+services:
+  - type: web
+    name: thabata-rsvp
+    runtime: node
+    plan: free
+    rootDir: thabata-rsvp
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeployTrigger: "off"
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY_HOPS
+        value: "1"
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
