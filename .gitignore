@@ -1,4 +1,4 @@
-# Segredos, confirmações e dependências nunca devem ir para o repositório.
+
 **/.env
 **/.env.*
 !**/.env.example
