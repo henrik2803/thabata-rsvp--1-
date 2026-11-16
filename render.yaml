@@ -1,4 +1,4 @@
-# Apenas o Web Service gratuito. O PostgreSQL é criado separadamente no Neon.
+
 services:
   - type: web
     name: thabata-rsvp
